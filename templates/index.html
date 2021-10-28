@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title%} {{ title }} {% endblock %}
+{% block content%}
+<div class="container">
+
+    {% if current_user.is_authenticated %}
+
+    <h1>Welcome {{ current_user.uname }}</h1>
+    <a href="{{url_for('logout')}}">Logout</a>
+
+    {% else %}
+
+    <a href="{{url_for('login')}}">Sign in/Sign Up</a>
+    
+    {% endif %}
+</div>
+{% endblock %}
