@@ -62,7 +62,8 @@ Then start the application by executing the run file
 set FLASK_APP=main
 flask run
 ```
-             |  
+
+Login           |  Register
 :-------------------------:|:-------------------------:
 ![Sample](https://github.com/Dev-Elie/User-Authentication-in-Flask/blob/main/static/login.png)  |  ![Sample](https://github.com/Dev-Elie/User-Authentication-in-Flask/blob/main/static/register.png)
 
