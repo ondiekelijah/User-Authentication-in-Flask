@@ -1,6 +1,6 @@
 # User-Authentication-in-Flask
 
-Set up & Installation.
+## Set up & Installation.
 
 ### 1 .Clone/Fork the git repo and create an environment 
                     
