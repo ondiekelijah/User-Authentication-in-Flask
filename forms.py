@@ -6,6 +6,7 @@ from wtforms import (
     DateField,
     TextAreaField,
 )
+
 from flask_wtf import FlaskForm
 from wtforms.validators import InputRequired, Length, EqualTo, Email, Regexp ,Optional
 import email_validator

@@ -6,6 +6,7 @@
         <div class="col-lg-5 col-md-6 m-auto card p-4">
             <form action="{{ request.path }}" method="POST" class="card-body">
                 {{ form.csrf_token }}
+
                 {% with messages = get_flashed_messages(with_categories=true) %}
                 <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
                 {% if messages %}
@@ -17,10 +18,12 @@
                 {% endfor %}
                 {% endif %}
                 {% endwith %}
+
                 <div class="text-center">
                     <h2>User Authentication in Flask</h2>
                     <h5 class="text-primary">{{ text }}</h5>
                 </div>
+                
                 {% if request.path == '/register/' %}
                 <div class="form-group mb-3">
                     {{ form.username(class_="form-control",placeholder="Username")}}
@@ -59,7 +62,12 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div> {% endfor%}
                 {% endif %}
-                <div class="text-center"><button type="submit" class="btn btn-primary mb-3"> {{ btn_action }} </button>
+                <div class="text-center">
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-block btn-primary mb-3"> {{ btn_action }} </button>
+                    </div>
+
                     <p>
                         {% if request.path != '/register/' %}
                         New here?
@@ -69,6 +77,7 @@
                         <a href="{{url_for('login')}}">Login</a>
                         {% endif %}
                     </p>
+                    
                 </div>
             </form>
         </div>
