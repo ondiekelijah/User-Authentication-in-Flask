@@ -38,7 +38,10 @@ or
 
 Applies for windows/macOS/Linux
 
-```pip install -r requirements.txt```
+```
+cd main
+pip install -r requirements.txt
+```
 ### 4 .Migrate/Create a database
 
 ```python manage.py```
