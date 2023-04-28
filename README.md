@@ -39,7 +39,6 @@ or
 Applies for windows/macOS/Linux
 
 ```
-cd main
 pip install -r requirements.txt
 ```
 ### 4 .Migrate/Create a database
